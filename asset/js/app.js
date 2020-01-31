@@ -46,34 +46,36 @@ form.addEventListener("click", function (e) {
 
             /*si on a choisi de la convertir en mois*/
             if (inputMonths.checked) {
+                
                 let months = (age.value) * 12;
-                result.innerHTML = lisibilite_nombre(months) + " mois";
+                result.innerHTML = lisibilite_nombre(months) + " mois ";
             }
             /*si on a choisi de la convertir en semaines*/
             if (inputWeeks.checked) {
+                
                 let weeks = (age.value) * 52;
-                result.innerHTML = lisibilite_nombre(weeks) + " semaines";
+                result.innerHTML += lisibilite_nombre(weeks) + " semaines ";
             }
             /*si on a choisi de la convertir en jours*/
             if (inputDays.checked) {
                 let days = (age.value) * 365;
-                result.innerHTML = lisibilite_nombre(days) + " jours";
+                result.innerHTML += lisibilite_nombre(days) + " jours ";
             }
             /*si on a choisi de la convertir en heures*/
-            else if (inputHours.checked) {
+            if (inputHours.checked) {
                 let hours = ((age.value) * 365) * 24;
-                result.innerHTML = lisibilite_nombre(hours) + " heures";
+                result.innerHTML += lisibilite_nombre(hours) + " heures ";
             }
             /*si on a choisi de la convertir en minutes*/
-            else if (inputMinutes.checked) {
+            if (inputMinutes.checked) {
                 let minutes = (((age.value) * 365) * 24) * 60;
-                result.innerHTML = lisibilite_nombre(minutes) + " minutes";
+                result.innerHTML += lisibilite_nombre(minutes) + " minutes ";
             }
             /*si on a choisi de la convertir en secondes */
-            else if (inputSeconds.checked) {
+            if (inputSeconds.checked) {
                 let secondes = ((((age.value) * 365) * 24) * 60) * 60;
                 
-                result.innerHTML = lisibilite_nombre(secondes) + " secondes";
+                result.innerHTML += lisibilite_nombre(secondes) + " secondes ";
             }
         } else {
             result.innerHTML = "Merci d'entrer un âge valide ...";
