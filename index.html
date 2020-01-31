@@ -40,35 +40,37 @@
         <div class="row">
             <div class="col">
                 <div class="form">
-                    <form>
-                        <input class="form-control mb-2" type="text" id="age" placeholder="Ex: 24" required>
-
+                    <form action="#">
+                        <input class="form-control mb-2" type="text" id="age" placeholder="Ex: 24">
+                        <!--inDays-->
                         <div class="form-check ml-2">
-                            <input class="form-check-input" type="radio" name="choix" id="inputSecondes" value="option1"
+                            <input class="form-check-input" type="radio" name="choix" id="inputDays" value="option1">
+                            <label class="form-check-label" for="inputJours">
+                                Jours
+                            </label>
+                        </div>
+                        <!--inHours-->
+                        <div class="form-check ml-2">
+                            <input class="form-check-input" type="radio" name="choix" id="inputHours" value="option2">
+                            <label class="form-check-label" for="inputHeures">
+                                Heures
+                            </label>
+                        </div>
+                        <!--inMinutes-->
+                        <div class="form-check ml-2">
+                            <input class="form-check-input" type="radio" name="choix" id="inputMinutes" value="option3">
+                            <label class="form-check-label" for="inputMinutes">
+                                Minutes
+                            </label>
+                        </div>
+                        <!--inSeconds-->
+                        <div class="form-check ml-2">
+                            <input class="form-check-input" type="radio" name="choix" id="inputSeconds" value="option4"
                                 checked>
                             <label class="form-check-label" for="inputSecondes">
                                 Secondes
                             </label>
                         </div>
-                        <div class="form-check ml-2">
-                            <input class="form-check-input" type="radio" name="choix" id="inputMinutes" value="option2">
-                            <label class="form-check-label" for="inputMinutes">
-                                Minutes
-                            </label>
-                        </div>
-                        <div class="form-check ml-2">
-                            <input class="form-check-input" type="radio" name="choix" id="inputHeures" value="option3">
-                            <label class="form-check-label" for="inputHeures">
-                                Heures
-                            </label>
-                        </div>
-                        <div class="form-check ml-2">
-                            <input class="form-check-input" type="radio" name="choix" id="inputJours" value="option4">
-                            <label class="form-check-label" for="inputJours">
-                                Jours
-                            </label>
-                        </div>
-
                         <input id="button" type="button" class="btn btn-outline-primary btn-lg btn-block mt-3 mb-3"
                             value="Calculer">
                     </form>
